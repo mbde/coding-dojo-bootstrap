@@ -1,4 +1,4 @@
-This Branch is for practicing a kata inspired by [Sandro Mancuso](/sandromancuso/Bank-kata)
+This Branch is for practicing a kata inspired by [Sandro Mancuso](https://github.com/sandromancuso/Bank-kata)
 
 ###Requirements:
 * An Account should have means to process a Deposit and Withdrawal
