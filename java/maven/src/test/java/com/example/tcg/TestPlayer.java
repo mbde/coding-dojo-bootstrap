@@ -22,6 +22,9 @@ public class TestPlayer {
     @Test
     public void playerHasThreeCardsBeforeGameStarts() {
         Player player = new Player();
+        player.addNewCardToHand();
+        player.addNewCardToHand();
+        player.addNewCardToHand();
         assertThat(player.getHand().size()).isEqualTo(3);
     }
 

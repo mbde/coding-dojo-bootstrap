@@ -1,12 +1,13 @@
 package com.example.tcg;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+
 import java.util.List;
 
 public class Player {
 
     Deck deck = new Deck();
+    List<String> hand = new ArrayList<String>();
 
     public int getHealth() {
         return 30;
@@ -16,7 +17,11 @@ public class Player {
         return 0;
     }
 
+    public void addNewCardToHand() {
+        hand.add(deck.drawCard());
+    }
+
     public List<String> getHand() {
-        return Arrays.asList("0","8","4");
+        return hand;
     }
 }
