@@ -10,19 +10,23 @@ public class Game {
     public Game(Player playerOne, Player playerTwo) {
         this.playerOne = playerOne;
         this.playerTwo = playerTwo;
+        setup();
+
+    }
+
+    private void setup() {
         for (int i = 0; i < 3; i++) {
-            playerOne.addNewCardToHand();
-            playerTwo.addNewCardToHand();
+            this.playerOne.addNewCardToHand();
+            this.playerTwo.addNewCardToHand();
         }
         Random random = new Random();
         if (random.nextInt(2) == 0) {
-            activePlayer = playerOne;
-            playerTwo.addNewCardToHand();
+            this.activePlayer = playerOne;
+            this.playerTwo.addNewCardToHand();
         } else {
-            activePlayer = playerTwo;
-            playerOne.addNewCardToHand();
+            this.activePlayer = playerTwo;
+            this.playerOne.addNewCardToHand();
         }
-
     }
 
     public Player getActivePlayer() {
